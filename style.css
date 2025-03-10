@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ####################################### GOOGLE MATERIAL ICONS ############################################ */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 40px;
+}
+
+/* ######################################### NAVIGATOR BAR ###################################################*/
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover{
+    color: darkgreen;
+}
+
+#logo {
+    height: 60px;
+    width: 80px;
+    margin-right: 30px;
+}
+
+.nav-links {
+    gap: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a.active {
+    position: relative;
+    color: black;
+}
+
+.nav-links li a.active::after {
+    content: '';
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background-color: darkgreen;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container button{
+    border: none;
+    background: none; 
+    cursor: pointer; 
+    outline: none; 
+    padding: 10px;
+}
+
+.nav-container button:hover{
+    color: white;
+}
+
+/* ###################################### BOTTOM FOOTER CONTAINER ############################################*/
+
+footer{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.footerBottom{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footerBottom p{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+/* ########################################### BACKGROUND IMAGE ############################################*/
+
+.background-image{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* ########################################### HOME.HTML #####################################################*/
+
+#home-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    color: green;
+}
+
+#home-info{
+    text-align: center;
+    max-width: 500px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.home-buttons button{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    margin: 0 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: lightgreen;
+    color: black;
+    transition: color 0.4s linear;
+    
+}
+
+.home-buttons button:hover {
+    background-color: darkgreen;
+    color: white;
+}
+/* ########################################### PRODUCT.HTML ##################################################*/
+
+#product-container{
+    display: flex;
+    gap: 50px;
+    padding-top: 100px;
+}
+
+#product-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-box{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.product-box-image{
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.product-box p{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* ################################### IDENTIFICATION.HTML ###################################################*/
+
+#product-title{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: green;
+}
+
+.product-container-outliner{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    height: 900px;
+    padding: 20px; 
+    margin: 30px auto;
+} 
+
+.product-container-outliner p{
+    margin: 0;
+    display: inline-block;
+    width: 700px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#image-box{
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    background: whitesmoke;
+}
+
+.img-area {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: lightgray;
+}
+
+.img-area h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.img-area p{
+    color: black;
+}
+
+.img-area img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 100;
+}
+
+.img-area::before {
+    content: attr(data-img);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 200
+}
+
+.img-area.active:hover::before{
+    opacity: 1;
+}
+
+.select-image{
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background: lightgreen;
+    color: black;
+    transition: all .3s ease;
+}
+
+.select-image:hover{
+    background: darkgreen;
+    color: white;
+}
+
+#submit-back-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+#submit-back-container button{
+    display: block;
+    width: 150px;
+    margin-top: 20px;
+    padding: 16px 0;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    background: lightgreen;
+    color: black;
+    transition: all .3s ease;
+}
+
+#submit-back-container button:hover{
+    background: darkgreen;
+    color: #fff;
+}
+
+#resultContainer{
+    top: 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding-top: 80px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 530px; 
+    color: whitesmoke;
+}
+
+/* #################################### ADDING and UPDATE PRODUCT ############################################*/
+
+#add-update-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+.add-update-container{
+    position: relative; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+    height: 700px;
+    padding: 20px; 
+    margin: 30px auto;
+} 
+
+.add-update-mini-container{
+    max-width: 600px;
+    height: 580px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.add-update-container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box span{
+    text-align: start;
+}
+
+form .user-details .input-box .details{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-details .input-box input, #productCategory, #productPromotion{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.halal-options{
+    height: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.halal-options, .upload-image-box{
+    align-items: center;
+    padding: 10px;
+
+}
+
+input[type="radio"] {
+    transform: scale(0.5); 
+}
+
+.image-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#itemImages{
+    width: 350px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+}
+
+::-webkit-file-upload-button{
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: black;
+    background: lightgreen;
+}
+
+::-webkit-file-upload-button:hover{
+    font-weight: bold;
+    color: white;
+    background-color: darkgreen;
+}
+
+form .button-container{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+form .button{
+    height: 45px;
+    margin: 15px 0;
+    flex: 1;
+    max-width: 200px;
+}
+
+form .big-nice-button {
+    background-color: lightgreen; 
+    color: black;
+    padding: 15px 30px; 
+    font-size: 15px; 
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    background-color: white;
+}
+
+form .button input:hover, button:hover{
+    color: white;
+    background-color: darkgreen;
+}
+
+/* ####################################### EDIT.HTML ######################################################### */
+
+#edit-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+#edit-container-outliner{
+    position: relative; 
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+    height: 700px;
+    padding: 20px; 
+    margin: 30px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    overflow: auto;
+} 
+
+#edit-search-input {
+    box-sizing: border-box;
+    height: 50px;
+    width: 200px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    color: darkgreen;
+}
+
+/* #################################### DATA STATISTICS.HTML #################################################*/
+.data-container {
+    position: relative; 
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 5px; 
+    margin: 20px; 
+}   
+
+#chart-container{
+    padding-top: 10px;
+    display: flex;
+}
+
+.chart {
+    margin: 50px;
+}
+
+.data-title{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: green;
+}
+
+#statistics-container{
+    padding-top: 10px;
+    display: flex;
+}
+
+.brand-container-box{
+    width: 300px;
+    height: 370px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    background-color: lightgreen;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brand-container-box:hover {
+    transform: translateY(-10px);
+    box-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.brand-container-box p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.brand-picture{
+    width: 300px;
+    height: 200px;
+}
+
+/* ########################################## INVENTORY.HTML ###############################################*/
+#inventory-title{
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+
+#option-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.option-details{
+    width: 200px;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px auto;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-details:hover {
+    transform: translateY(-10px);
+    box-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.option-details p{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.option-details .value{
+    padding-top: 10px; 
+    font-size: 30px;
+}
+
+
+
+.option-details .topic{
+    padding: 7px; 
+    font-size: 15px;
+}
+
+.more-info{
+    display: block;
+    width: 150px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 10px;
+    background: darkgreen;
+    color: white;
+    transition: all .3s ease;
+}
+
+#arrow-icon{
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+#inventory-container-outliner {
+    position: relative; 
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    max-width: 1190px;
+    width: 100%;
+    height: 500px;
+    max-height: 100%;
+    padding: 20px; 
+    margin: 20px; 
+    flex-direction: column;
+    display: flex;
+    overflow: auto;
+}   
+
+#input-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    height: 50px;
+    width: 200px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#search-icon{
+    position: absolute;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.table-container{
+    width: 1150px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    gap: 180px;
+}
+
+.mini-container{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.mini-container .title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+/* ######################################### NOTIFICATIONS ########################################## */
+#notifications-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    font-weight: bold;
+}
+
+.notifications-container{
+    position: relative; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid #000; 
+    outline-offset: 10px; 
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    height: 550px;
+    padding: 20px; 
+    margin: 30px auto;
+} 
+
+.notifications-mini-container{
+    margin-top: 30px;
+    max-width: 500px;
+    height: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 60px 10px 0px 10px; /* TOP RIGHT BOTTOM LEFT*/
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.circle {
+    position: absolute;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 150px; 
+    height: 100px; 
+    border-radius: 50%;
+    z-index: 2;
+    background-image: url(images/quantity_tracker_icon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.notifications-mini-container #title{
+    padding-top: 10px;
+    color: darkgreen;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notifications-mini-container #paragraph{
+    padding-top: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notifications-container form .user-email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user-email .quantity-input-box input, #Email{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+form .user-email .quantity-input-box{
+    margin: 20px 0 12px 0;
+    width: 450px;
+}
+
+form .quantity-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .quantity-button{
+    height: 45px;
+    margin: 15px 0;
+    flex: 1;
+    max-width: 200px;
+}
+
+form .quantity-button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+    background-color: white;
+}
+
+form .quantity-button input:hover, button:hover{
+    color: white;
+    background-color: darkgreen;
+}
+
+/* ######################################### DATABASE TABLE ############################################*/ 
+
+.content-table{
+    border-collapse: collapse;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 17px; 
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.content-table thead tr{
+    background-color: darkgreen;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.content-table th{
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.content-table td{
+    color: black;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #000;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #ccc;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid darkgreen;
+}
+.parent-container {
+    text-align: center;
+    width: 100%; 
+}
